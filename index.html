@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Réseaux Sociaux</title>
+    <style>
+        /* Style global */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h1 {
+            color: #00C9A7;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: bold;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Animation d'apparition */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Conteneur principal */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(145deg, #1f1f1f, #333);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        /* Style des icônes de réseaux sociaux */
+        .socials a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #222;
+            padding: 15px;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            color: #fff;
+            font-size: 18px;
+        }
+
+        /* Effets de survol */
+        .socials a:hover {
+            transform: scale(1.2);
+            background-color: #00C9A7;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .socials a:hover img {
+            filter: brightness(1.2);
+        }
+
+        /* Taille des icônes */
+        .socials img {
+            width: 40px;
+            height: 40px;
+            transition: filter 0.3s ease;
+        }
+
+        /* Détails spécifiques pour chaque réseau social */
+        .tiktok { background-color: #010101; }
+        .twitch { background-color: #9146FF; }
+        .youtube { background-color: #FF0000; }
+        .discord { background-color: #7289DA; }
+
+        /* Animation de survol de l'icône */
+        .socials a:hover img {
+            transform: rotate(360deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Suivez-moi</h1>
+        <p>Sur mes réseaux sociaux</p>
+        <div class="socials">
+            <!-- Lien TikTok -->
+            <a href="https://www.tiktok.com/@dragondevv" target="_blank" class="tiktok">
+                <img src="https://img.freepik.com/psd-gratuit/icone-tiktok-realiste-3d_125540-2052.jpg?t=st=1731100965~exp=1731104565~hmac=a174614b10b06518e09add2fbfa3e65e0a4a99ffce5159031073854ffc8278cd&w=740" alt="TikTok">
+            </a>
+            <!-- Lien Twitch -->
+            <a href="https://www.twitch.tv/souxboyy" target="_blank" class="twitch">
+                <img src="https://logo-marque.com/wp-content/uploads/2020/11/Twitch-Logo.png" alt="Twitch">
+            </a>
+            <!-- Lien YouTube -->
+            <a href="https://www.youtube.com/channel/UCG_G9XRbpvXzOtuQyGPgyOQ" target="_blank" class="youtube">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube">
+            </a>
+            <!-- Lien Discord -->
+            <a href="https://discord.gg/v8fxz9vv" target="_blank" class="discord">
+                <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6918e57475a843f59f_icon_clyde_black_RGB.svg" alt="Discord">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
